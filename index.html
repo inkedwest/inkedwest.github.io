@@ -4,8 +4,7 @@
   <title>Digital CV of Francky Glatigny</title>
   <meta charset="utf-8" />
   <meta name="description" content="My Curriculum Vitae" />
-  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <link rel="stylesheet" media="screen and (max-width: 1280px)" />
+  <link rel="stylesheet" media="screen and (max-width: 1280px)" href="style.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" />
   <link rel="stylesheet" href="http://icons.iconarchive.com/icons/tatice/operating-systems/96/Linux-icon.png" />
@@ -16,14 +15,14 @@
   <link rel="stylesheet" href="https://www.cufonfonts.com/font/circular-std" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link href="http:////cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
-  <link rel="stylesheet" href="index.html" />
+  <link rel="stylesheet" href="versionfr.html" />
   <link rel="stylesheet" href="more.html" />
   <link rel="stylesheet" href="game.html" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/more.css" />
+  <link rel="stylesheet" href="assets/css/game.css" />
   <link src="stylesheet" href="assets/css/sassstyle.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/styleprogressbar.css" />
-  <link rel="stylesheet" href="assets/css/stylecarousel.css" />
-  <link rel="stylesheet" href="assets/scss/versionfr.scss" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/webdev.png" />
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -453,78 +452,75 @@
             </div>
           </div> <!--FIN DE LA SECTION RECOMMANDATION -->
 
-          <div class="section" id="contact"> <!--DÉBUT DE LA SECTION "CONTACT"-->
-                  <div id="sectiontitle"  class="h2 text-center title title-contact" ><strong>CONTACT</strong></div><br> <!--  TITRE CONTACT -->
+          <div id="sectiontitle" class="h2 text-center title title-contact" ><strong>CONTACT</strong></div> <!--DÉBUT DE LA SECTION "CONTACT"-->
 
+          <div class="section" id="contact" >
+          <div class="cc-contact-information">
 
-                  <div class="cc-contact-information">
+              <div class="container-fluid">
+                <div class="cc-contact">
+                  <div class="row">
+                    <div class="col-md-12">
 
-                      <div class="container-fluid">
-                        <div class="cc-contact">
-                            <div class="col-md-12"> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
-
-                                <div class="row"> <!--  DÉBUT ROW IPHONE + FORMULAIRE -->
-
-                                  <div id="iphone" class="col-md-6"> <!--  DÉBUT IPHONE -->
-                                    <div id="scan" class="p pb-3"><strong>SCANNEZ LE QR CODE</strong></div>
-
-                                    <div class="iphone">
-                                      <div class="border">
-                                        <div class="responsive-html5-chat">
-                                        </div>
-                                      </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <form action="https://" method="POST">
+                                <div id="email" class="p pb-3"><strong>SEND AN EMAIL</strong></div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="input-group"><span class="input-group-addon"></span>
+                                      <input class="form-control" type="text" name="Nom" placeholder="Name" required="required"/>
                                     </div>
-                                  </div> <!--  FIN IPHONE -->
-
-
-                                  <div id="formulaire" class="col-md-6"> <!--  DÉBUT FORMULAIRE -->
-                                    <div class="card-body">
-                                      <form action="https://" method="POST">
-                                        <div id="email" class="p pb-3"><strong>OU ENVOYEZ-MOI UN MAIL</strong></div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="input-group"><span class="input-group-addon"></span>
-                                              <input class="form-control" type="text" name="Nom" placeholder="Nom" required="required"/>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="input-group"><span class="input-group-addon"></span>
-                                              <input class="form-control" type="text" name="Sujet" placeholder="Objet" required="required"/>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="input-group"><span class="input-group-addon"></span>
-                                              <input class="form-control" type="email" name="email" placeholder="Entrez votre eMail" required="required"/>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="form-group"><span class="input-group-addon"></span>
-                                              <textarea class="form-control" name="message" placeholder="Tapez votre message" required="required"></textarea>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col">
-                                            <button class="btn btn-send" type="submit">Envoyer</button>
-                                          </div>
-                                        </div>
-                                      </form>
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="input-group"><span class="input-group-addon"></span>
+                                      <input class="form-control" type="text" name="Sujet" placeholder="Subject" required="required"/>
                                     </div>
-                                  </div> <!--  FIN FORMULAIRE -->
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="input-group"><span class="input-group-addon"></span>
+                                      <input class="form-control" type="email" name="email" placeholder="Tape your eMail" required="required"/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="form-group"><span class="input-group-addon"></span>
+                                      <textarea class="form-control" name="message" placeholder="Tape your message" required="required"></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col">
+                                    <button class="btn btn-send" type="submit">Send</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
 
+                          <div class="col-md-6">
+                            <div id="email" class="p pb-3"><strong>SCAN TO CONNECT</strong></div>
 
-                                </div> <!--  FIN ROW IPHONE + FORMULAIRE -->
-                            </div> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
+                            <div class="iphone">
+                              <div class="border">
+                                <div class="responsive-html5-chat">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div> <!--FIN DE LA SECTION "CONTACT"-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!--FIN DE LA SECTION "CONTACT"-->
 
           <div class="section-game" id="game"> <!--DÉBUT DE LA SECTION "GAME"-->
             <div class="container">
@@ -559,8 +555,9 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
           <script type="text/javascript" src="assets/js/effects.js"></script>
+          <script type="text/javascript" src="assets/js/game.js"></script>
           <script type="text/javascript" src="assets/js/versionfr.js"></script>
-          <script src="assets/js/scriptprogressbar.js"></script>
-          <script src="assets/js/scriptcarousel.js"></script> <!--FIN DES "SCRIPTS"-->
+          <script src="assets/js/more.js"></script>
+          <script src="assets/js/versionfr.js"></script> <!--FIN DES "SCRIPTS"-->
         </body>
         </html>
