@@ -453,75 +453,78 @@
             </div>
           </div> <!--FIN DE LA SECTION RECOMMANDATION -->
 
-          <div id="sectiontitle" class="h2 text-center title title-contact" ><strong>CONTACT</strong></div> <!--DÉBUT DE LA SECTION "CONTACT"-->
+          <div class="section" id="contact"> <!--DÉBUT DE LA SECTION "CONTACT"-->
+                  <div id="sectiontitle"  class="h2 text-center title title-contact" ><strong>CONTACT</strong></div><br> <!--  TITRE CONTACT -->
 
-          <div class="section" id="contact" >
-          <div class="cc-contact-information">
 
-              <div class="container-fluid">
-                <div class="cc-contact">
-                  <div class="row">
-                    <div class="col-md-12">
+                  <div class="cc-contact-information">
 
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="card-body">
-                              <form action="https://" method="POST">
-                                <div id="email" class="p pb-3"><strong>SEND AN EMAIL</strong></div>
-                                <div class="row mb-3">
-                                  <div class="col">
-                                    <div class="input-group"><span class="input-group-addon"></span>
-                                      <input class="form-control" type="text" name="Nom" placeholder="Name" required="required"/>
+                      <div class="container-fluid">
+                        <div class="cc-contact">
+                            <div class="col-md-12"> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
+
+                                <div class="row"> <!--  DÉBUT ROW IPHONE + FORMULAIRE -->
+
+                                  <div id="iphone" class="col-md-6"> <!--  DÉBUT IPHONE -->
+                                    <div id="scan" class="p pb-3"><strong>SCANNEZ LE QR CODE</strong></div>
+
+                                    <div class="iphone">
+                                      <div class="border">
+                                        <div class="responsive-html5-chat">
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row mb-3">
-                                  <div class="col">
-                                    <div class="input-group"><span class="input-group-addon"></span>
-                                      <input class="form-control" type="text" name="Sujet" placeholder="Subject" required="required"/>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mb-3">
-                                  <div class="col">
-                                    <div class="input-group"><span class="input-group-addon"></span>
-                                      <input class="form-control" type="email" name="email" placeholder="Tape your eMail" required="required"/>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mb-3">
-                                  <div class="col">
-                                    <div class="form-group"><span class="input-group-addon"></span>
-                                      <textarea class="form-control" name="message" placeholder="Tape your message" required="required"></textarea>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col">
-                                    <button class="btn btn-send" type="submit">Send</button>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
+                                  </div> <!--  FIN IPHONE -->
 
-                          <div class="col-md-6">
-                            <div id="email" class="p pb-3"><strong>SCAN TO CONNECT</strong></div>
 
-                            <div class="iphone">
-                              <div class="border">
-                                <div class="responsive-html5-chat">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                  <div id="formulaire" class="col-md-6"> <!--  DÉBUT FORMULAIRE -->
+                                    <div class="card-body">
+                                      <form action="https://" method="POST">
+                                        <div id="email" class="p pb-3"><strong>OU ENVOYEZ-MOI UN MAIL</strong></div>
+                                        <div class="row mb-3">
+                                          <div class="col">
+                                            <div class="input-group"><span class="input-group-addon"></span>
+                                              <input class="form-control" type="text" name="Nom" placeholder="Nom" required="required"/>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                          <div class="col">
+                                            <div class="input-group"><span class="input-group-addon"></span>
+                                              <input class="form-control" type="text" name="Sujet" placeholder="Objet" required="required"/>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                          <div class="col">
+                                            <div class="input-group"><span class="input-group-addon"></span>
+                                              <input class="form-control" type="email" name="email" placeholder="Entrez votre eMail" required="required"/>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                          <div class="col">
+                                            <div class="form-group"><span class="input-group-addon"></span>
+                                              <textarea class="form-control" name="message" placeholder="Tapez votre message" required="required"></textarea>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col">
+                                            <button class="btn btn-send" type="submit">Envoyer</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div> <!--  FIN FORMULAIRE -->
+
+
+                                </div> <!--  FIN ROW IPHONE + FORMULAIRE -->
+                            </div> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
                         </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!--FIN DE LA SECTION "CONTACT"-->
+                  </div> <!--FIN DE LA SECTION "CONTACT"-->
 
           <div class="section-game" id="game"> <!--DÉBUT DE LA SECTION "GAME"-->
             <div class="container">
