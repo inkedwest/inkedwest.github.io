@@ -1,0 +1,1224 @@
+/*PARAMÈTRES GÉNÉRAUX*/
+
+/*RESPONSIVE*/
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+
+
+
+/*POLICE*/
+
+/* POLICE D'ÉCRITURE DANS TOUT LE BODY*/
+
+body{
+background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+margin: 0;
+width: 100%;
+height: 100%;
+font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background-image: url(../images/white.jpg);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;}
+
+#h5{
+
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+.card-body{
+  font-size: 16px;
+}
+
+.section{
+  padding-top: 70px;
+  margin: 35px;
+}
+
+/*Mise en forme des card avec un box-shadow*/
+.card{
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.6), 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION HEADER*/
+
+
+/*Navbar*/
+
+.navbar{
+  background-color: #020810;
+}
+
+
+
+.navbar {
+    background-color: #020810;
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-pills .nav-link{
+    color: #FFFFFF !important;
+    text-align: center;
+}
+.nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
+    color: blue !important;
+    background-color: #fff !important;
+}
+.navbar-toggler{
+    color: #fff !important;
+    border-style: none;
+}
+
+/*Background du header*/
+.profile-page{
+  background-image: url('../images/earth.png');
+  height: 620px;
+  width: 100%;
+}
+
+/*Paramètres Avatar de profil */
+
+
+ .photoMoiProfil{
+   margin-top: 50px;
+   border-radius: 50%;
+   width: 30%;
+   height: 30%;
+   border-color: #FFFFFF;
+   border-style: solid;
+   border-width: 3px;
+ }
+
+ .photoMBTI{
+   margin-top: -200px;
+   margin-left: 50px;
+   width: 200px;
+   height: 200px;
+ }
+
+/*Paramètres "Francky G." */
+
+
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+
+html{
+  width:100%;
+  height: 100%;
+  }
+
+#franckyg{
+  position:absolute;
+  @include center();
+}
+
+
+.titleName{
+  font-weight: 800;
+  color: transparent;
+  font-size: 80px;
+  margin-top: 20px;
+  background: url('../images/rainbow-nebula.jpg') repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:100%;
+  letter-spacing: -8px;
+  margin-left: 50px;
+}
+
+.fullstack{
+  display: block;
+  text-transform: uppercase;
+  padding-top:10px;
+  color: white;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.subtitle{
+  display: block;
+  text-transform: uppercase;
+  padding-top:10px;
+  color: white;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+
+#pirates{
+  width :28px;
+  height: 28px;
+}
+
+
+/*2 BOUTONS : HIRE ME et CV PDF */
+
+
+/*Bouton Hire me*/
+.btn{
+    background-color: #020810;
+    color: white;
+    border: 2px solid #008CBA;
+}
+
+/*Effet lors du passage de la souris sur les boutons HIRE PDF et SEND*/
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #020810;
+    border-color: #020810;
+}
+
+/* PARAMÈTRES DES BOUTONS HIRE PDF SEND */
+.btn-hire, .btn-cv, .btn-send .btn-cv{
+  border-color: #FFFFFF;
+  margin-top: 250px;
+}
+
+
+/* Paramètres Flag */
+ .flag{
+   height: 50px;
+    width: 50px;
+    margin-top: -40px;
+    border-radius: 40px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    position: center;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*SECTION ABOUT ME*/
+
+/*Mise en page de la section me*/
+#me{
+  margin: 35px;
+  margin-top: 90px;
+}
+
+#abouttitle{
+  color: black;
+}
+
+#about{
+color: black;
+margin-top: 50px;
+}
+
+#infotitle{
+color: black;
+}
+
+#info{
+color: black;
+margin-top: 30px;
+
+}
+
+#sport {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  position: absolute;
+  top: 84%;
+  left: 10%;
+  margin-left: 100px;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+#sport::before,
+#sport::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  display: block;
+  background: #da2127;
+  -webkit-clip-path: polygon(169px 182px,153px 182px,135px 181px,135px 199px,144px 203px,143px 228px,143px 261px,129px 217px,118px 182px,103px 182px,89px 181px,89px 199px,99px 203px,99px 228px,99px 259px,100px 288px,89px 293px,89px 306px,107px 310px,126px 315px,126px 300px,119px 292px,119px 248px,131px 283px,144px 318px,162px 325px,162px 295px,163px 260px,163px 228px,164px 204px,171px 198px,169px 182px,177px 183px,177px 197px,186px 205px,186px 245px,186px 311px,178px 316px,178px 328px,215px 342px,215px 327px,206px 318px,206px 287px,206px 258px,218px 258px,224px 264px,234px 264px,234px 230px,224px 231px,219px 238px,207px 238px,207px 220px,207px 202px,222px 202px,227px 215px,241px 215px,241px 183px,248px 182px,268px 182px,285px 182px,286px 198px,277px 203px,277px 229px,277px 266px,277px 294px,293px 289px,296px 264px,311px 265px,311px 286px,311px 306px,283px 313px,248px 323px,247px 309px,255px 301px,255px 274px,255px 242px,255px 202px,248px 198px,248px 182px,240px 183px,219px 183px,198px 183px,177px 183px,169px 182px);
+  clip-path: polygon(169px 182px,153px 182px,135px 181px,135px 199px,144px 203px,143px 228px,143px 261px,129px 217px,118px 182px,103px 182px,89px 181px,89px 199px,99px 203px,99px 228px,99px 259px,100px 288px,89px 293px,89px 306px,107px 310px,126px 315px,126px 300px,119px 292px,119px 248px,131px 283px,144px 318px,162px 325px,162px 295px,163px 260px,163px 228px,164px 204px,171px 198px,169px 182px,177px 183px,177px 197px,186px 205px,186px 245px,186px 311px,178px 316px,178px 328px,215px 342px,215px 327px,206px 318px,206px 287px,206px 258px,218px 258px,224px 264px,234px 264px,234px 230px,224px 231px,219px 238px,207px 238px,207px 220px,207px 202px,222px 202px,227px 215px,241px 215px,241px 183px,248px 182px,268px 182px,285px 182px,286px 198px,277px 203px,277px 229px,277px 266px,277px 294px,293px 289px,296px 264px,311px 265px,311px 286px,311px 306px,283px 313px,248px 323px,247px 309px,255px 301px,255px 274px,255px 242px,255px 202px,248px 198px,248px 182px,240px 183px,219px 183px,198px 183px,177px 183px,169px 182px);
+  transition: all 0.75s;
+}
+
+#sport::after {
+  -webkit-clip-path: polygon(200px 371px,190px 358px,177px 348px,159px 342px,108px 329px,87px 320px,78px 310px,74px 295px,74px 170px,80px 158px,84px 145px,73px 137px,88px 136px,91px 124px,92px 108px,81px 115px,83px 103px,72px 93px,87px 93px,92px 82px,96px 93px,109px 93px,99px 101px,103px 116px,92px 108px,91px 124px,96px 136px,110px 137px,122px 137px,135px 137px,140px 124px,141px 108px,129px 115px,133px 103px,122px 95px,136px 94px,140px 80px,145px 94px,158px 94px,148px 102px,151px 115px,141px 108px,140px 125px,145px 136px,158px 136px,167px 154px,163px 130px,166px 106px,174px 90px,188px 76px,202px 69px,217px 66px,228px 66px,214px 76px,209px 74px,205px 77px,213px 80px,216px 84px,222px 82px,216px 77px,231px 67px,235px 79px,237px 94px,244px 94px,256px 94px,260px 81px,265px 93px,278px 94px,291px 94px,305px 94px,309px 81px,314px 93px,327px 94px,317px 102px,320px 115px,309px 107px,309px 124px,314px 137px,326px 137px,315px 146px,322px 158px,309px 149px,297px 158px,301px 145px,291px 136px,304px 137px,310px 124px,310px 108px,298px 114px,301px 103px,291px 94px,278px 94px,268px 101px,272px 115px,261px 108px,260px 124px,265px 136px,279px 136px,269px 144px,271px 158px,260px 150px,249px 159px,253px 143px,243px 137px,255px 137px,260px 125px,262px 108px,250px 116px,252px 103px,244px 94px,237px 93px,236px 110px,230px 125px,219px 137px,205px 147px,193px 153px,179px 156px,172px 157px,175px 143px,178px 128px,185px 115px,190px 119px,215px 87px,201px 81px,198px 84px,211px 92px,207px 98px,191px 89px,189px 94px,204px 101px,201px 106px,183px 97px,180px 101px,198px 109px,193px 115px,179px 107px,175px 111px,183px 113px,176px 124px,172px 136px,167px 155px,158px 136px,147px 144px,152px 159px,140px 151px,128px 158px,132px 146px,121px 137px,111px 136px,101px 144px,103px 159px,93px 151px,80px 158px,74px 171px,326px 170px,327px 294px,326px 305px,322px 314px,315px 320px,306px 328px,286px 333px,241px 343px,224px 349px,210px 358px,200px 370px,200px 387px,209px 375px,226px 362px,249px 353px,308px 340px,321px 334px,330px 327px,335px 319px,338px 309px,338px 54px,326px 64px,304px 70px,279px 71px,257px 65px,227px 51px,214px 42px,200px 20px,186px 42px,166px 53px,145px 65px,121px 70px,98px 71px,77px 66px,62px 53px,62px 299px,65px 317px,75px 328px,84px 333px,100px 340px,155px 354px,173px 361px,189px 372px,201px 387px);
+  clip-path: polygon(200px 371px,190px 358px,177px 348px,159px 342px,108px 329px,87px 320px,78px 310px,74px 295px,74px 170px,80px 158px,84px 145px,73px 137px,88px 136px,91px 124px,92px 108px,81px 115px,83px 103px,72px 93px,87px 93px,92px 82px,96px 93px,109px 93px,99px 101px,103px 116px,92px 108px,91px 124px,96px 136px,110px 137px,122px 137px,135px 137px,140px 124px,141px 108px,129px 115px,133px 103px,122px 95px,136px 94px,140px 80px,145px 94px,158px 94px,148px 102px,151px 115px,141px 108px,140px 125px,145px 136px,158px 136px,167px 154px,163px 130px,166px 106px,174px 90px,188px 76px,202px 69px,217px 66px,228px 66px,214px 76px,209px 74px,205px 77px,213px 80px,216px 84px,222px 82px,216px 77px,231px 67px,235px 79px,237px 94px,244px 94px,256px 94px,260px 81px,265px 93px,278px 94px,291px 94px,305px 94px,309px 81px,314px 93px,327px 94px,317px 102px,320px 115px,309px 107px,309px 124px,314px 137px,326px 137px,315px 146px,322px 158px,309px 149px,297px 158px,301px 145px,291px 136px,304px 137px,310px 124px,310px 108px,298px 114px,301px 103px,291px 94px,278px 94px,268px 101px,272px 115px,261px 108px,260px 124px,265px 136px,279px 136px,269px 144px,271px 158px,260px 150px,249px 159px,253px 143px,243px 137px,255px 137px,260px 125px,262px 108px,250px 116px,252px 103px,244px 94px,237px 93px,236px 110px,230px 125px,219px 137px,205px 147px,193px 153px,179px 156px,172px 157px,175px 143px,178px 128px,185px 115px,190px 119px,215px 87px,201px 81px,198px 84px,211px 92px,207px 98px,191px 89px,189px 94px,204px 101px,201px 106px,183px 97px,180px 101px,198px 109px,193px 115px,179px 107px,175px 111px,183px 113px,176px 124px,172px 136px,167px 155px,158px 136px,147px 144px,152px 159px,140px 151px,128px 158px,132px 146px,121px 137px,111px 136px,101px 144px,103px 159px,93px 151px,80px 158px,74px 171px,326px 170px,327px 294px,326px 305px,322px 314px,315px 320px,306px 328px,286px 333px,241px 343px,224px 349px,210px 358px,200px 370px,200px 387px,209px 375px,226px 362px,249px 353px,308px 340px,321px 334px,330px 327px,335px 319px,338px 309px,338px 54px,326px 64px,304px 70px,279px 71px,257px 65px,227px 51px,214px 42px,200px 20px,186px 42px,166px 53px,145px 65px,121px 70px,98px 71px,77px 66px,62px 53px,62px 299px,65px 317px,75px 328px,84px 333px,100px 340px,155px 354px,173px 361px,189px 372px,201px 387px);
+  background: #003a73;
+}
+
+#sport:hover::before {
+  -webkit-clip-path: polygon(278px 195px,274px 188px,273px 185px,269px 183px,265px 180px,261px 177px,256px 156px,250px 143px,246px 123px,246px 110px,244px 99px,241px 92px,237px 85px,231px 80px,223px 75px,222px 73px,217px 70px,211px 66px,212px 63px,214px 61px,218px 58px,220px 51px,223px 51px,226px 46px,228px 40px,226px 38px,230px 28px,230px 22px,225px 16px,224px 13px,216px 10px,247px 9px,259px 12px,266px 17px,272px 23px,277px 32px,278px 41px,278px 361px,276px 368px,273px 375px,268px 380px,264px 384px,257px 388px,251px 389px,256px 384px,259px 377px,258px 369px,253px 355px,254px 353px,252px 347px,250px 335px,251px 322px,253px 316px,249px 307px,245px 302px,240px 271px,237px 263px,226px 242px,223px 220px,220px 206px,216px 191px,219px 190px,212px 163px,208px 153px,203px 150px,212px 123px,225px 115px,231px 147px,245px 177px,235px 181px,229px 188px,224px 198px,224px 207px,226px 217px,230px 222px,235px 227px,240px 230px,247px 232px,253px 233px,260px 231px,266px 228px,271px 224px,275px 220px,278px 215px);
+  clip-path: polygon(278px 195px,274px 188px,273px 185px,269px 183px,265px 180px,261px 177px,256px 156px,250px 143px,246px 123px,246px 110px,244px 99px,241px 92px,237px 85px,231px 80px,223px 75px,222px 73px,217px 70px,211px 66px,212px 63px,214px 61px,218px 58px,220px 51px,223px 51px,226px 46px,228px 40px,226px 38px,230px 28px,230px 22px,225px 16px,224px 13px,216px 10px,247px 9px,259px 12px,266px 17px,272px 23px,277px 32px,278px 41px,278px 361px,276px 368px,273px 375px,268px 380px,264px 384px,257px 388px,251px 389px,256px 384px,259px 377px,258px 369px,253px 355px,254px 353px,252px 347px,250px 335px,251px 322px,253px 316px,249px 307px,245px 302px,240px 271px,237px 263px,226px 242px,223px 220px,220px 206px,216px 191px,219px 190px,212px 163px,208px 153px,203px 150px,212px 123px,225px 115px,231px 147px,245px 177px,235px 181px,229px 188px,224px 198px,224px 207px,226px 217px,230px 222px,235px 227px,240px 230px,247px 232px,253px 233px,260px 231px,266px 228px,271px 224px,275px 220px,278px 215px);
+  background: #f00b47;
+}
+
+
+#sport:hover::after {
+  -webkit-clip-path: polygon(246px 390px,236px 390px,222px 390px,203px 390px,192px 390px,176px 390px,160px 390px,147px 389px,136px 385px,128px 379px,123px 371px,121px 363px,121px 347px,121px 334px,121px 319px,121px 306px,121px 294px,121px 282px,121px 270px,121px 253px,121px 237px,121px 228px,121px 218px,121px 208px,121px 196px,121px 181px,121px 168px,121px 158px,121px 149px,121px 129px,121px 116px,121px 104px,121px 93px,121px 85px,121px 76px,121px 69px,121px 59px,121px 52px,121px 43px,123px 31px,127px 23px,133px 16px,142px 11px,150px 9px,159px 9px,171px 9px,183px 9px,196px 10px,207px 10px,198px 13px,194px 21px,194px 32px,190px 32px,189px 37px,190px 42px,193px 45px,192px 53px,191px 57px,188px 61px,181px 62px,177px 61px,176px 63px,163px 64px,157px 67px,152px 72px,145px 84px,141px 92px,137px 102px,133px 111px,129px 118px,127px 125px,124px 132px,123px 140px,126px 148px,128px 150px,133px 150px,140px 150px,140px 154px,135px 158px,132px 167px,130px 181px,132px 190px,136px 201px,142px 212px,146px 221px,147px 225px,155px 226px,160px 234px,164px 242px,171px 252px,179px 263px,187px 273px,195px 280px,212px 296px,220px 302px,227px 307px,232px 317px,230px 321px,236px 334px,241px 344px,239px 348px,240px 351px,243px 352px,242px 360px,231px 368px,229px 357px,227px 348px,224px 334px,222px 320px,214px 320px,215px 329px,216px 342px,217px 350px,211px 350px,212px 342px,215px 329px,214px 320px,208px 320px,187px 320px,177px 320px,170px 320px,166px 320px,157px 320px,157px 333px,157px 348px,152px 333px,148px 320px,138px 320px,138px 330px,138px 342px,138px 351px,138px 358px,138px 368px,147px 368px,147px 358px,147px 340px,151px 355px,155px 368px,166px 368px,166px 355px,166px 342px,166px 332px,166px 320px,170px 320px,170px 328px,170px 345px,169px 359px,169px 368px,180px 368px,181px 360px,185px 360px,187px 359px,188px 353px,187px 348px,185px 347px,181px 347px,181px 339px,185px 339px,187px 337px,188px 334px,186px 330px,184px 328px,181px 328px,181px 339px,181px 347px,181px 360px,180px 368px,189px 368px,194px 366px,196px 362px,198px 358px,198px 350px,196px 346px,194px 344px,191px 342px,194px 341px,196px 339px,198px 335px,197px 329px,196px 325px,194px 323px,187px 320px,207px 320px,205px 332px,204px 340px,202px 347px,200px 358px,198px 368px,209px 368px,210px 358px,218px 358px,219px 368px,231px 368px,242px 360px,240px 371px,239px 379px,241px 385px,246px 390px);
+  clip-path: polygon(246px 390px,236px 390px,222px 390px,203px 390px,192px 390px,176px 390px,160px 390px,147px 389px,136px 385px,128px 379px,123px 371px,121px 363px,121px 347px,121px 334px,121px 319px,121px 306px,121px 294px,121px 282px,121px 270px,121px 253px,121px 237px,121px 228px,121px 218px,121px 208px,121px 196px,121px 181px,121px 168px,121px 158px,121px 149px,121px 129px,121px 116px,121px 104px,121px 93px,121px 85px,121px 76px,121px 69px,121px 59px,121px 52px,121px 43px,123px 31px,127px 23px,133px 16px,142px 11px,150px 9px,159px 9px,171px 9px,183px 9px,196px 10px,207px 10px,198px 13px,194px 21px,194px 32px,190px 32px,189px 37px,190px 42px,193px 45px,192px 53px,191px 57px,188px 61px,181px 62px,177px 61px,176px 63px,163px 64px,157px 67px,152px 72px,145px 84px,141px 92px,137px 102px,133px 111px,129px 118px,127px 125px,124px 132px,123px 140px,126px 148px,128px 150px,133px 150px,140px 150px,140px 154px,135px 158px,132px 167px,130px 181px,132px 190px,136px 201px,142px 212px,146px 221px,147px 225px,155px 226px,160px 234px,164px 242px,171px 252px,179px 263px,187px 273px,195px 280px,212px 296px,220px 302px,227px 307px,232px 317px,230px 321px,236px 334px,241px 344px,239px 348px,240px 351px,243px 352px,242px 360px,231px 368px,229px 357px,227px 348px,224px 334px,222px 320px,214px 320px,215px 329px,216px 342px,217px 350px,211px 350px,212px 342px,215px 329px,214px 320px,208px 320px,187px 320px,177px 320px,170px 320px,166px 320px,157px 320px,157px 333px,157px 348px,152px 333px,148px 320px,138px 320px,138px 330px,138px 342px,138px 351px,138px 358px,138px 368px,147px 368px,147px 358px,147px 340px,151px 355px,155px 368px,166px 368px,166px 355px,166px 342px,166px 332px,166px 320px,170px 320px,170px 328px,170px 345px,169px 359px,169px 368px,180px 368px,181px 360px,185px 360px,187px 359px,188px 353px,187px 348px,185px 347px,181px 347px,181px 339px,185px 339px,187px 337px,188px 334px,186px 330px,184px 328px,181px 328px,181px 339px,181px 347px,181px 360px,180px 368px,189px 368px,194px 366px,196px 362px,198px 358px,198px 350px,196px 346px,194px 344px,191px 342px,194px 341px,196px 339px,198px 335px,197px 329px,196px 325px,194px 323px,187px 320px,207px 320px,205px 332px,204px 340px,202px 347px,200px 358px,198px 368px,209px 368px,210px 358px,218px 358px,219px 368px,231px 368px,242px 360px,240px 371px,239px 379px,241px 385px,246px 390px);
+  background: #0069b9;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*SECTION SKILLS*/
+
+/*Mise en page de la section skills*/
+#skills{
+  margin: 35px;
+  margin-top: -10px;
+}
+
+#skillssubtitle{
+
+}
+
+#skillsprogressbar{
+    font-size: 11px;
+  }
+
+
+
+/* Titre "Skills" */
+#sectiontitle{
+  color: black;
+}
+
+
+/*Paramètres Systèmes d'exploitation*/
+.osx{
+  background-image: url(http://icons.iconarchive.com/icons/tatice/cristal-intense/96/Apple-icon.png);
+background-size: 66px;
+float: left;
+}
+.windows{
+  background-image: url(http://icons.iconarchive.com/icons/benjigarner/softdimension/96/Windows-icon.png);
+background-size: 65px;
+float: left;
+}
+.linux{
+  background-image: url(http://icons.iconarchive.com/icons/tatice/operating-systems/96/Linux-icon.png);
+background-size: 66px;
+float: left;
+}
+.terminal{
+  background-image: url(http://icons.iconarchive.com/icons/apathae/chakram-2/96/Terminal-icon.png);
+background-size: 65px;
+float: left;
+}
+
+/*Paramètres des progress bar circulaires*/
+
+#skillscirclebar{
+  margin-top: 100px;
+  width: 100%;
+  color: black;
+}
+
+.progress {
+      margin-bottom: 0px;
+      height: 20px;
+      top: 80px;
+      left: 0;
+      right: 50px;
+      bottom: 50px;
+      margin: auto;
+      background: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 75px;
+      margin-left: 5px;
+}
+
+
+.progress-bar {
+  background-color: #FFFFFF;
+}
+
+
+.progress-circle{
+  position: relative;             /* pour servir de référent */
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  font-size: 6em;                 /* pour définir les dimensions */
+  width: 1em;                     /* fixe la largeur */
+  height: 1em;                    /* fixe la hauteur */
+  border-radius: 50%;             /* rendu aspect circulaire */
+  border: .15em solid #FFFFFF;       /* couleur de fond de l'anneau */
+  background-color: #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  left: 30%;
+}
+.testcircle{
+  align-items: center;
+}
+.progress-masque {
+  position: absolute;
+  width: 1em;                     /* 100% de la largeur */
+  height: 1em;                    /* 100% de la hauteur */
+  left: -.15em;                   /* décalage de la largeur bordure de la gauge */
+  top: -.15em;                    /* décalage de la largeur bordure de la gauge */
+  clip: rect(0, 1em, 1em, .5em);  /* par défaut seule la partie droite est visible */
+}
+.progress-circle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progress-masque,
+.progress-circle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progress-masque,
+.progress-circle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progress-masque,
+.progress-circle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progress-masque,
+.progress-circle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progress-masque,
+.progress-circle[data-value^='100'] .progress-masque {
+  clip: rect(auto, auto, auto, auto);
+}
+.progress-barre,
+.progress-sup50 {
+  position: absolute;
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  border-width: .11em;            /* largeur bordure de la gauge */
+  border-style: solid;
+  border-color: #069;             /*couleur de fond du cercle*/
+  border-radius: 50%;             /* rendu aspect circulaire */
+  width: 1em;                     /* largeur à 100% */
+  height: 1em;                    /* hauteur à 100% */
+  clip: rect(0, .5em, 1em, 0);    /* on ne garde que la partie gauche */
+}
+
+.progress-circle[data-value="0"]     .progress-barre {transform: rotate(0.00deg)}
+.progress-circle[data-value="1"]     .progress-barre {transform: rotate(3.60deg)}
+.progress-circle[data-value="2"]     .progress-barre {transform: rotate(7.20deg)}
+.progress-circle[data-value="3"]     .progress-barre {transform: rotate(10.80deg)}
+.progress-circle[data-value="4"]     .progress-barre {transform: rotate(14.40deg)}
+.progress-circle[data-value="5"]     .progress-barre {transform: rotate(18.00deg)}
+.progress-circle[data-value="6"]     .progress-barre {transform: rotate(21.60deg)}
+.progress-circle[data-value="7"]     .progress-barre {transform: rotate(25.20deg)}
+.progress-circle[data-value="8"]     .progress-barre {transform: rotate(28.80deg)}
+.progress-circle[data-value="9"]     .progress-barre {transform: rotate(32.40deg)}
+.progress-circle[data-value="10"]    .progress-barre {transform: rotate(36.00deg)}
+.progress-circle[data-value="11"]    .progress-barre {transform: rotate(39.60deg)}
+.progress-circle[data-value="12"]    .progress-barre {transform: rotate(43.20deg)}
+.progress-circle[data-value="13"]    .progress-barre {transform: rotate(46.80deg)}
+.progress-circle[data-value="14"]    .progress-barre {transform: rotate(50.40deg)}
+.progress-circle[data-value="15"]    .progress-barre {transform: rotate(54.00deg)}
+.progress-circle[data-value="16"]    .progress-barre {transform: rotate(57.60deg)}
+.progress-circle[data-value="17"]    .progress-barre {transform: rotate(61.20deg)}
+.progress-circle[data-value="18"]    .progress-barre {transform: rotate(64.80deg)}
+.progress-circle[data-value="19"]    .progress-barre {transform: rotate(68.40deg)}
+.progress-circle[data-value="20"]    .progress-barre {transform: rotate(72.00deg)}
+.progress-circle[data-value="21"]    .progress-barre {transform: rotate(75.60deg)}
+.progress-circle[data-value="22"]    .progress-barre {transform: rotate(79.20deg)}
+.progress-circle[data-value="23"]    .progress-barre {transform: rotate(82.80deg)}
+.progress-circle[data-value="24"]    .progress-barre {transform: rotate(86.40deg)}
+.progress-circle[data-value="25"]    .progress-barre {transform: rotate(90.00deg)}
+.progress-circle[data-value="26"]    .progress-barre {transform: rotate(93.60deg)}
+.progress-circle[data-value="27"]    .progress-barre {transform: rotate(97.20deg)}
+.progress-circle[data-value="28"]    .progress-barre {transform: rotate(100.80deg)}
+.progress-circle[data-value="29"]    .progress-barre {transform: rotate(104.40deg)}
+.progress-circle[data-value="30"]    .progress-barre {transform: rotate(108.00deg)}
+.progress-circle[data-value="31"]    .progress-barre {transform: rotate(111.60deg)}
+.progress-circle[data-value="32"]    .progress-barre {transform: rotate(115.20deg)}
+.progress-circle[data-value="33"]    .progress-barre {transform: rotate(118.80deg)}
+.progress-circle[data-value="34"]    .progress-barre {transform: rotate(122.40deg)}
+.progress-circle[data-value="35"]    .progress-barre {transform: rotate(126.00deg)}
+.progress-circle[data-value="36"]    .progress-barre {transform: rotate(129.60deg)}
+.progress-circle[data-value="37"]    .progress-barre {transform: rotate(133.20deg)}
+.progress-circle[data-value="38"]    .progress-barre {transform: rotate(136.80deg)}
+.progress-circle[data-value="39"]    .progress-barre {transform: rotate(140.40deg)}
+.progress-circle[data-value="40"]    .progress-barre {transform: rotate(144.00deg)}
+.progress-circle[data-value="41"]    .progress-barre {transform: rotate(147.60deg)}
+.progress-circle[data-value="42"]    .progress-barre {transform: rotate(151.20deg)}
+.progress-circle[data-value="43"]    .progress-barre {transform: rotate(154.80deg)}
+.progress-circle[data-value="44"]    .progress-barre {transform: rotate(158.40deg)}
+.progress-circle[data-value="45"]    .progress-barre {transform: rotate(162.00deg)}
+.progress-circle[data-value="46"]    .progress-barre {transform: rotate(165.60deg)}
+.progress-circle[data-value="47"]    .progress-barre {transform: rotate(169.20deg)}
+.progress-circle[data-value="48"]    .progress-barre {transform: rotate(172.80deg)}
+.progress-circle[data-value="49"]    .progress-barre {transform: rotate(176.40deg)}
+.progress-circle[data-value="50"]    .progress-barre {transform: rotate(180.00deg)}
+.progress-circle[data-value="51"]    .progress-barre {transform: rotate(183.60deg)}
+.progress-circle[data-value="52"]    .progress-barre {transform: rotate(187.20deg)}
+.progress-circle[data-value="53"]    .progress-barre {transform: rotate(190.80deg)}
+.progress-circle[data-value="54"]    .progress-barre {transform: rotate(194.40deg)}
+.progress-circle[data-value="55"]    .progress-barre {transform: rotate(198.00deg)}
+.progress-circle[data-value="56"]    .progress-barre {transform: rotate(201.60deg)}
+.progress-circle[data-value="57"]    .progress-barre {transform: rotate(205.20deg)}
+.progress-circle[data-value="58"]    .progress-barre {transform: rotate(208.80deg)}
+.progress-circle[data-value="59"]    .progress-barre {transform: rotate(212.40deg)}
+.progress-circle[data-value="60"]    .progress-barre {transform: rotate(216.00deg)}
+.progress-circle[data-value="61"]    .progress-barre {transform: rotate(219.60deg)}
+.progress-circle[data-value="62"]    .progress-barre {transform: rotate(223.20deg)}
+.progress-circle[data-value="63"]    .progress-barre {transform: rotate(226.80deg)}
+.progress-circle[data-value="64"]    .progress-barre {transform: rotate(230.40deg)}
+.progress-circle[data-value="65"]    .progress-barre {transform: rotate(234.00deg)}
+.progress-circle[data-value="66"]    .progress-barre {transform: rotate(237.60deg)}
+.progress-circle[data-value="67"]    .progress-barre {transform: rotate(241.20deg)}
+.progress-circle[data-value="68"]    .progress-barre {transform: rotate(244.80deg)}
+.progress-circle[data-value="69"]    .progress-barre {transform: rotate(248.40deg)}
+.progress-circle[data-value="70"]    .progress-barre {transform: rotate(252.00deg)}
+.progress-circle[data-value="71"]    .progress-barre {transform: rotate(255.60deg)}
+.progress-circle[data-value="72"]    .progress-barre {transform: rotate(259.20deg)}
+.progress-circle[data-value="73"]    .progress-barre {transform: rotate(262.80deg)}
+.progress-circle[data-value="74"]    .progress-barre {transform: rotate(266.40deg)}
+.progress-circle[data-value="75"]    .progress-barre {transform: rotate(270.00deg)}
+.progress-circle[data-value="76"]    .progress-barre {transform: rotate(273.60deg)}
+.progress-circle[data-value="77"]    .progress-barre {transform: rotate(277.20deg)}
+.progress-circle[data-value="78"]    .progress-barre {transform: rotate(280.80deg)}
+.progress-circle[data-value="79"]    .progress-barre {transform: rotate(284.40deg)}
+.progress-circle[data-value="80"]    .progress-barre {transform: rotate(288.00deg)}
+.progress-circle[data-value="81"]    .progress-barre {transform: rotate(291.60deg)}
+.progress-circle[data-value="82"]    .progress-barre {transform: rotate(295.20deg)}
+.progress-circle[data-value="83"]    .progress-barre {transform: rotate(298.80deg)}
+.progress-circle[data-value="84"]    .progress-barre {transform: rotate(302.40deg)}
+.progress-circle[data-value="85"]    .progress-barre {transform: rotate(306.00deg)}
+.progress-circle[data-value="86"]    .progress-barre {transform: rotate(309.60deg)}
+.progress-circle[data-value="87"]    .progress-barre {transform: rotate(313.20deg)}
+.progress-circle[data-value="88"]    .progress-barre {transform: rotate(316.80deg)}
+.progress-circle[data-value="89"]    .progress-barre {transform: rotate(320.40deg)}
+.progress-circle[data-value="90"]    .progress-barre {transform: rotate(324.00deg)}
+.progress-circle[data-value="91"]    .progress-barre {transform: rotate(327.60deg)}
+.progress-circle[data-value="92"]    .progress-barre {transform: rotate(331.20deg)}
+.progress-circle[data-value="93"]    .progress-barre {transform: rotate(334.80deg)}
+.progress-circle[data-value="94"]    .progress-barre {transform: rotate(338.40deg)}
+.progress-circle[data-value="95"]    .progress-barre {transform: rotate(342.00deg)}
+.progress-circle[data-value="96"]    .progress-barre {transform: rotate(345.60deg)}
+.progress-circle[data-value="97"]    .progress-barre {transform: rotate(349.20deg)}
+.progress-circle[data-value="98"]    .progress-barre {transform: rotate(352.80deg)}
+.progress-circle[data-value="99"]    .progress-barre {transform: rotate(356.40deg)}
+.progress-circle[data-value="100"]   .progress-barre {transform: rotate(360.00deg)}
+
+.progress-sup50 {
+  display: none;
+  clip: rect(0, 1em, 1em, .5em);
+}
+.progress-circle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progress-sup50,
+.progress-circle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progress-sup50,
+.progress-circle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progress-sup50,
+.progress-circle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progress-sup50,
+.progress-circle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progress-sup50,
+.progress-circle[data-value^='100'] .progress-sup50 {
+  display:block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION DIPLOMAS*/
+
+.cc-education{
+  font-size: 35px;
+}
+
+/*Titre "Diplomas" */
+#sectiontitle{
+  color: black;
+}
+
+#textdiploma{
+  color: black;
+}
+
+/*Paramètres logos écoles*/
+
+#logoe2n{
+  margin-top: 10px;
+  width: 50%;
+  height: 40%;
+  margin-left: 80px;
+  position: center;
+  display: block;
+}
+
+#logoanderson{
+  margin-top: 30px;
+  width: 60%;
+  height: 40%;
+  margin-left: 60px;
+  position: center;
+  display: block;
+}
+
+/* EFFET DE ZOOM PHOTOS SOCIÉTÉS + ÉCOLES*/
+
+.zoom div img {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.zoom div:hover img {
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION EXPERIENCES*/
+
+/*Mise en page de la section experience*/
+#experience{
+  margin: 35px;
+}
+
+/*Titre "Experiences" */
+
+#sectiontitle{
+  color: black;
+}
+
+/*Titre de poste*/
+#h5{
+  color: black;
+}
+
+.dates{
+  color: white;
+}
+
+/*Couleur du background et du texte dans les titres des card*/
+.col-md-3{
+  background-image: url(../images/jupiter.jpg);
+  color: #FFFFFF
+}
+
+#galaxie{
+  background-image: url(../images/galaxy.jpg);
+}
+
+/*Titre de "Experience"*/
+#sectiontitle{
+  color: black;
+}
+
+#jobdescription {
+  font-size: 15px;
+  color: #000000;
+}
+
+.container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+
+/*Paramètres logos expériences*/
+
+#logobnp{
+  margin-top: 100px;
+  width: 85%;
+  height: 40%;
+  margin-left: 30px;
+  position: center;
+  display: block;
+}
+
+#logoboulanger{
+  margin-top: 100px;
+  width: 50%;
+  height: 40%;
+  margin-left: 80px;
+  position: center;
+  display: block;
+}
+
+#logoapple{
+  margin-top: 150px;
+  width: 35%;
+  height: 40%;
+  margin-left: 100px;
+  position: center;
+  display: block;
+}
+
+#logodrais{
+  margin-top: 200px;
+  width: 30%;
+  height: 40%;
+  margin-left: 100px;
+  position: center;
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SECTION CAROUSEL*/
+
+div#carousel {
+  perspective: 1200px;
+  background: #FFF;
+  padding-top: 5%;
+  font-size:0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 480px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+
+/* Paramètres des images */
+figure#spinner img {
+  width: 200%; max-width: 425px;
+  position: absolute; left: 35%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent;
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg);
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span {
+  color: #000000;
+  margin: 300px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -20rem;
+  border-bottom: none;
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION CONTACT*/
+
+/*Background "Contact"*/
+.cc-contact-information{
+  background-image: url('../images/saturne.jpg');
+  height: 780px;
+}
+
+#qrcode{
+  max-width: 70%;
+  height: auto;
+  margin-left: 90px;
+  margin-bottom: 50px;
+  position: block;
+}
+
+
+
+/*Mise en page de la section CONTACT*/
+#contact{
+  margin: 35px;
+}
+
+#address{
+  color: black;
+}
+
+#mobile{
+  color: black;
+}
+
+#textcontact{
+  color: black;
+}
+
+/*Titre "Contact"*/
+
+#sectiontitle{
+  color: black;
+}
+
+.title-contact{
+  margin-top: 40px;
+}
+
+ {   position: fixed; right: 0; bottom: 0;   min-width: 100%; min-height: 100%;   width: auto; height: auto; z-index: -100;   background-size: cover; }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SCROLL*/
+
+
+/*Paramètres CSS du bouton scroll*/
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*SECTION FOOTER*/
+
+
+/*Citation*/
+
+#citation{
+	max-width: 930px;
+	display: block;
+	margin: 100px auto 20px auto;
+}
+
+/*Richard Branson*/
+author{
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+	text-align: right;
+	opacity: .6;
+}
+
+/*Tous les spans doivent être bloqués ou "inline block" pour pourvoir se transformer*/
+#citation span{
+	display: inline-block;
+}
+
+
+/*Quand JS trouve un espace, il le remplace avec un span avec la classe .space*/
+/*Utile pour s'amuser avec les espaces*/
+.space{
+	width: 15px;
+}
+
+
+/*Animations pour chaque lettre/span utilisé(e)*/
+.effect1{
+	animation: zoom 6s linear infinite;
+	-webkit-animation: zoom 6s linear infinite;
+}
+.effect2{
+	animation: bounce 3s linear infinite;
+	-webkit-animation: bounce 3s linear infinite;
+}
+.effect3{
+	animation: squash 2s linear infinite;
+	-webkit-animation: squash 2s linear infinite;
+}
+.effect4{
+	animation: rot 5s linear infinite;
+	-webkit-animation: rot 5s linear infinite;
+}
+.effect5{
+	animation: fade2 4s linear infinite;
+	-webkit-animation: fade2 4s linear infinite;
+}
+
+
+/*Bunch of animations*/
+
+@keyframes zoom{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+@-webkit-keyframes zoom{
+	0%{-webkit-transform: scale(1);}
+	50%{-webkit-transform: scale(1.1);}
+	100%{-webkit-transform: scale(1);}
+}
+
+@keyframes bounce{
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(1px);}
+	100%{transform: translateY(0px);}
+}
+@-webkit-keyframes bounce{
+	0%{-webkit-transform: translateY(0px);}
+	50%{-webkit-transform: translateY(1px);}
+	100%{-webkit-transform: translateY(0px);}
+}
+
+@keyframes squash{
+	0%{transform:scale(1,1);}
+	50%{transform:scale(1,1.2);}
+	100%{transform:scale(1,1);}
+}
+@-webkit-keyframes squash{
+	0%{-webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(1,1.2);}
+	100%{-webkit-transform:scale(1,1);}
+}
+
+@keyframes rot{
+	0%{transform: rotate(9deg);}
+	50%{transform: rotate(-9deg);}
+	100%{transform: rotate(9deg);}
+}
+@-webkit-keyframes rot{
+	0%{-webkit-transform: rotate(9deg);}
+	50%{-webkit-transform: rotate(-9deg);}
+	100%{-webkit-transform: rotate(9deg);}
+}
+
+@keyframes fade2{
+	0%{
+		transform: scale(.8);
+		opacity: .7;
+	}
+	50%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(.8);
+		opacity: .7;
+	}
+}
+@-webkit-keyframes fade2{
+	0%{
+		-webkit-transform: scale(.8);
+		opacity: .7;
+	}
+	50%{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: scale(.8);
+		opacity: .7;
+	}
+}
+
+
+
+
+
+
+/* Paramètres des liens Github,Linkedin Instagram & Gitlab en bas de page */
+.button-container-bottom{
+  margin-top: 200px;
+}
+/* Taille des icones github linkedin instagram Gitlab*/
+.btn-icon-2{
+  font-size: 50px;
+  padding: 10px;
+}
+
+/* Couleurs des icones Github linkedin Instagram & Gitlab*/
+.btn-github2{
+  color: #0056B3;
+}
+
+.btn-linkedIn2{
+  color: #0056B3;
+}
+
+.btn-instagram2{
+    color: #0056B3;
+  }
+
+
+  form.chat *{
+    transition:all .5s;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+  }
+
+  form.chat {
+    margin:0;
+    cursor:default;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+  }
+
+  form.chat span.spinner{
+    -moz-animation: loading-bar 1s 1;
+    -webkit-animation: loading-bar 1s 1;
+    animation: loading-bar 1s 1;
+    display: block;
+    height: 2px;
+    background-color: #00e34d;
+    transition: width 0.2s;
+    position:absolute;
+    top:0; left:0; right:0;
+    z-index:4
+  }
+
+  form.chat .messages{
+    display:block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position:relative;
+    height:90%;
+    width:100%;
+    padding:2% 3%;
+    border-bottom:1px solid #ecf0f1;
+  }
+
+  form.chat ::-webkit-scrollbar {width: 3px; height:1px;transition:all .5s;z-index:10;}
+  form.chat ::-webkit-scrollbar-track {background-color: white;}
+  form.chat ::-webkit-scrollbar-thumb {
+    background-color: #bec4c8;
+    border-radius:3px;
+  }
+
+  form.chat .message{
+    display:block;
+    width:98%;
+    padding:0.5%;
+  }
+
+  form.chat .message p{
+    margin:0;
+  }
+
+  form.chat .myMessage,
+  form.chat .fromThem {
+    max-width: 50%;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+  }
+
+  form.chat .message:hover .myMessage{
+    -webkit-transform: translateX(-130px);
+    transform: translateX(-130px);
+  }
+
+  form.chat .message:hover .fromThem{
+    -webkit-transform: translateX(130px);
+    transform: translateX(130px);
+  }
+
+  form.chat .message:hover date {
+    opacity: 1;
+  }
+
+  form.chat .myMessage,.fromThem{
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    clear: both;
+    font: 400 15px 'Open Sans', sans-serif;
+  }
+
+  form.chat .myMessage {
+    background: #00e34d;
+    color:white;
+    float:right;
+    clear:both;
+    border-bottom-right-radius: 20px 0px\9;
+  }
+
+  form.chat .myMessage:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -2px;
+    right: -8px;
+    height: 19px;
+    border-right: 20px solid #00e34d;
+    border-bottom-left-radius: 16px 14px;
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+    border-bottom-left-radius: 15px 0px\9;
+    transform: translate(-1px, -2px)\9;
+  }
+
+  form.chat .myMessage:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -2px;
+    right: -42px;
+    width: 12px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+    -webkit-transform: translate(-30px, -2px);
+    transform: translate(-30px, -2px);
+  }
+
+  form.chat .fromThem {
+    background: #E5E5EA;
+    color: black;
+    float: left;
+    clear:both;
+    border-bottom-left-radius: 30px 0px\9;
+  }
+  form.chat .fromThem:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -2px;
+    left: -7px;
+    height: 19px;
+    border-left: 20px solid #E5E5EA;
+    border-bottom-right-radius: 16px 14px;
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+    border-bottom-right-radius: 15px 0px\9;
+    transform: translate(-1px, -2px)\9;
+  }
+
+  form.chat .fromThem:after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    bottom: -2px;
+    left: 4px;
+    width: 26px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+    -webkit-transform: translate(-30px, -2px);
+    transform: translate(-30px, -2px);
+  }
+
+  form.chat date {
+    position:absolute;
+    top: 10px;
+    font-size:14px;
+    white-space:nowrap;
+    vertical-align:middle;
+    color: #8b8b90;
+    opacity: 0;
+    z-index:4;
+  }
+
+  form.chat .myMessage date {
+    left: 105%;
+  }
+
+  form.chat .fromThem date {
+    right: 105%;
+  }
+
+  form.chat input{
+    font: 400 13px 'Open Sans', sans-serif;
+    border:0;
+    padding:0 15px;
+    height:10%;
+    outline:0;
+  }
+
+  form.chat input[type='text']{
+    width:73%;
+    float:left;
+  }
+
+  form.chat input[type='submit']{
+    width:23%;
+    background:transparent;
+    color:#00E34D;
+    font-weight:700;
+    text-align:right;
+    float:right;
+  }
+
+    form.chat .myMessage,form.chat .fromThem{
+      font-size:12px;
+    }
+
+    form.chat .message:hover .myMessage{
+      transform: translateY(18px);
+      -webkit-transform: translateY(18px);
+    }
+
+    form.chat .message:hover .fromThem{
+      transform: translateY(18px);
+      -webkit-transform: translateY(18px);
+    }
+
+    form.chat .myMessage date,form.chat .fromThem date {
+      top: -20px;
+      left:auto;
+      right:0;
+      font-size:12px;
+    }
+
+    form.chat .myMessage,
+    form.chat .fromThem {
+      max-width: 90%;
+    }
+
+  @-moz-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @-webkit-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* DEMO */
+  .iphone{
+    width:300px;
+    height:609px;
+    background-image:url('http://www.adobewordpress.com/tasarim/images/iphone6.png');
+    background-size:100% 100%;
+    margin:0 auto;
+    position:relative;
+  }
+
+  .border{
+  	position:absolute;
+  	top:12.3%;right:7%;left:7%;bottom:12%;
+  	overflow:hidden;
+  }
+
+  a.article{
+    position:fixed;
+    bottom:15px;left:15px;
+    display:table;
+    text-decoration:none;
+    color:white;
+    background-color:#00e34d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font: 400 15px 'Open Sans', sans-serif;
+  }
