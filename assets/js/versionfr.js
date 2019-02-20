@@ -52,7 +52,7 @@ function responsiveChat(element) {
     });
 }
 
-function responsiveChatPush(element, sender, origin, date, message, photo) {
+function responsiveChatPush(element, sender, origin, date, message) {
     var originClass;
     if (origin == 'me') {
         originClass = 'myMessage';
@@ -69,4 +69,4 @@ responsiveChat('.responsive-html5-chat');
 responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:30', 'Salut Francky! J\'ai une superbe offre à te proposer. Aurais-tu une adresse mail stp? J\'aimerais t\'envoyer la fiche de poste. Si l\'opportunité t\'intéresse, nous pourrions nous appeler cette semaine afin d\'en discuter de vive voix. Qu\'en dis-tu?');
 responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 14:36', 'Bonjour!<br> Pour avoir mes coordonnées complètes et me joindre, <br><strong>SCANNE LE QR CODE CI-DESSOUS AVEC TON SMARTPHONE : <img src="assets/images/qrcode.png" width="150" height="150" /></strong>');
 responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:52', 'QR Code scanné, c\'est dans la boîte, merci ! :)');
-responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 15:07', 'Je t\'en prie!<br> Tu as également la possibilité de m\'écrire un mail directement en tapant ton message ci-dessous et en cliquant sur "Send" pour envoyer!');
+responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 15:07', 'Je t\'en prie!');

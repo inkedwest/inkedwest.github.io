@@ -4,7 +4,8 @@
   <title>Digital CV of Francky Glatigny</title>
   <meta charset="utf-8" />
   <meta name="description" content="My Curriculum Vitae" />
-  <link rel="stylesheet" media="screen and (max-width: 1280px)" href="style.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <link rel="stylesheet" media="screen and (max-width: 1280px)" /> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" />
   <link rel="stylesheet" href="http://icons.iconarchive.com/icons/tatice/operating-systems/96/Linux-icon.png" />
@@ -15,14 +16,15 @@
   <link rel="stylesheet" href="https://www.cufonfonts.com/font/circular-std" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link href="http:////cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/styleprogressbar.css" />
-  <link rel="stylesheet" href="assets/css/stylecarousel.css" />
-  <link rel="stylesheet" href="versionfr.html" />
+  <link rel="stylesheet" href="index.html" />
   <link rel="stylesheet" href="more.html" />
   <link rel="stylesheet" href="game.html" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link src="stylesheet" href="assets/css/sassstyle.css" />
+  <link rel="stylesheet" href="assets/css/styleprogressbar.css" />
+  <link rel="stylesheet" href="assets/css/stylecarousel.css" />
+  <link rel="stylesheet" href="assets/scss/versionfr.scss" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/webdev.png" />
-  <link src="stylesheet" href="assets/css/sassstyle.js" />
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
   <header id="scrolltop"> <!--DÉBUT DE LA SECTION "NAVBAR"-->
@@ -231,35 +233,7 @@
               </div>
             </div> <!-- FIN PROGRESS BAR ANGULAR JS -->
           </div> <!--ROW 7--> <!--FIN DE LA SOUS-SECTION "WEB DEVELOMENT"-->
-          <div id="skillssubtitle" class="h5"><strong>Operating systems</strong></div> <!--DÉBUT DE LA SOUS-SECTION "OS"-->
-          <div class="progress-circle osx" data-value="80"> <!--OS-->
-            <div class="progress-masque" class="progress-circle">
-              <div class="progress-bar"></div>
-              <div class="progress-sup50"></div>
-            </div>
-            <p id="skillscirclebar" class="progress">OS X</p>
-          </div> <!--OS-->
-          <div class="progress-circle windows" data-value="65"> <!--WINDOWS-->
-            <div class="progress-masque" class="progress-circle">
-              <div class="progress-bar"></div>
-              <div class="progress-sup50"></div>
-            </div>
-            <p id="skillscirclebar" class="progress">Windows</p>
-          </div> <!--WINDOWS-->
-          <div class="progress-circle linux" data-value="75"> <!--LINUX-->
-            <div class="progress-masque" class="progress-circle">
-              <div class="progress-bar"></div>
-              <div class="progress-sup50"></div>
-            </div>
-            <p id="skillscirclebar" class="progress">Linux</p>
-          </div> <!--LINUX-->
-          <div class="progress-circle terminal" data-value="90"> <!--TERMINAL-->
-            <div class="progress-masque" class="progress-circle">
-              <div class="progress-bar"></div>
-              <div class="progress-sup50"></div>
-            </div>
-            <p id="skillscirclebar" class="progress">Terminal</p>
-          </div> <!--TERMINAL-->
+
         </div>
       </div>
     </div>
@@ -478,19 +452,22 @@
               </div>
             </div>
           </div> <!--FIN DE LA SECTION RECOMMANDATION -->
-          <div class="cc-contact-information"> <!--DÉBUT DE LA SECTION "CONTACT"-->
-            <div class="section" id="contact">
+
+          <div id="sectiontitle" class="h2 text-center title title-contact" ><strong>CONTACT</strong></div> <!--DÉBUT DE LA SECTION "CONTACT"-->
+
+          <div class="section" id="contact" >
+          <div class="cc-contact-information">
+
               <div class="container-fluid">
                 <div class="cc-contact">
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card mb-0">
-                        <div id="sectiontitle" class="h2 text-center title title-contact" ><strong>CONTACT</strong></div>
+
                         <div class="row">
                           <div class="col-md-6">
                             <div class="card-body">
                               <form action="https://" method="POST">
-                                <div id="email" class="p pb-3"><strong>EMAIL</strong></div>
+                                <div id="email" class="p pb-3"><strong>SEND AN EMAIL</strong></div>
                                 <div class="row mb-3">
                                   <div class="col">
                                     <div class="input-group"><span class="input-group-addon"></span>
@@ -508,14 +485,14 @@
                                 <div class="row mb-3">
                                   <div class="col">
                                     <div class="input-group"><span class="input-group-addon"></span>
-                                      <input class="form-control" type="email" name="email" placeholder="eMail" required="required"/>
+                                      <input class="form-control" type="email" name="email" placeholder="Tape your eMail" required="required"/>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="row mb-3">
                                   <div class="col">
                                     <div class="form-group"><span class="input-group-addon"></span>
-                                      <textarea class="form-control" name="message" placeholder="Message" required="required"></textarea>
+                                      <textarea class="form-control" name="message" placeholder="Tape your message" required="required"></textarea>
                                     </div>
                                   </div>
                                 </div>
@@ -527,19 +504,25 @@
                               </form>
                             </div>
                           </div>
+
                           <div class="col-md-6">
-                            <div id="contact" class="card-body">
-                              <img id="qrcode" src="assets/images/qrcode.jpg" >
+                            <div id="email" class="p pb-3"><strong>SCAN TO CONNECT</strong></div>
+
+                            <div class="iphone">
+                              <div class="border">
+                                <div class="responsive-html5-chat">
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div> <!--FIN DE LA SECTION "CONTACT"-->
+
           <div class="section-game" id="game"> <!--DÉBUT DE LA SECTION "GAME"-->
             <div class="container">
               <div id="sectiontitle" class="h2 text-center mb-4 title" ><strong>SOME FUN BEFORE LEAVING</strong>
@@ -568,11 +551,13 @@
               </a>
             </footer>
           </div> <!--FIN DU "FOOTER"-->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--APPEL DES "SCRIPTS"-->
+
+          <script src="http:////cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--APPEL DES "SCRIPTS"-->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
           <script type="text/javascript" src="assets/js/effects.js"></script>
-          <script src="scriptprogressbar.js"></script>
-          <script src="scriptcarousel.js"></script> <!--FIN DES "SCRIPTS"-->
+          <script type="text/javascript" src="assets/js/versionfr.js"></script>
+          <script src="assets/js/scriptprogressbar.js"></script>
+          <script src="assets/js/scriptcarousel.js"></script> <!--FIN DES "SCRIPTS"-->
         </body>
         </html>

@@ -743,6 +743,35 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
   color: black;
 }
 
+
+
+#formulaire{
+margin-top: 150px;
+}
+
+#email{
+  color: white;
+  text-align: center;
+}
+
+#scan{
+  color: white;
+  text-align: center;
+}
+
+
+#iphone{
+  margin-top: 50px;
+}
+
+
+.btn-send{
+}
+
+
+
+
+
 /*Titre "Contact"*/
 
 #sectiontitle{
