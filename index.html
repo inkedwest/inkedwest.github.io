@@ -4,7 +4,7 @@
   <title>Digital CV of Francky Glatigny</title>
   <meta charset="utf-8" />
   <meta name="description" content="My Curriculum Vitae" />
-  <link rel="stylesheet" media="screen and (max-width: 1280px)" href="style.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+  <link rel="stylesheet" media="screen and (max-width: 1280px)" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> Pour le responsive mais bug d'affichage -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
@@ -230,7 +230,6 @@
               </div>
             </div> <!-- FIN PROGRESS BAR ANGULAR JS -->
           </div> <!--ROW 7--> <!--FIN DE LA SOUS-SECTION "WEB DEVELOMENT"-->
-
         </div>
       </div>
     </div>
@@ -286,8 +285,7 @@
   </div> <!--FIN DE LA SECTION "DIPLOMA"-->
   <div class="section" id="experience"> <!--DÉBUT SECTION "EXPERIENCES"-->
     <div class="container-fluid cc-experience">
-      <div id="sectiontitle" class="h2 text-center mb-4 title"><strong>EXPERIENCES</strong>
-      </div>
+      <div id="sectiontitle" class="h2 text-center mb-4 title"><strong>EXPERIENCES</strong></div>
       <div class="card">
         <div class="row">
           <div class="col-md-3">
@@ -449,80 +447,68 @@
               </div>
             </div>
           </div> <!--FIN DE LA SECTION RECOMMANDATION -->
-
           <div class="section" id="contact"> <!--DÉBUT DE LA SECTION "CONTACT"-->
-                  <div id="sectiontitle"  class="h2 text-center title title-contact" ><strong>CONTACT</strong></div><br> <!--  TITRE CONTACT -->
-
-
-                  <div class="cc-contact-information">
-
-                      <div class="container-fluid">
-                        <div class="cc-contact">
-                            <div class="col-md-12"> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
-
-                                <div class="row"> <!--  DÉBUT ROW IPHONE + FORMULAIRE -->
-
-                                  <div id="iphone" class="col-md-6"> <!--  DÉBUT IPHONE -->
-                                    <div id="scan" class="p pb-3"><strong>SCANNEZ LE QR CODE</strong></div>
-
-                                    <div class="iphone">
-                                      <div class="border">
-                                        <div class="responsive-html5-chat">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div> <!--  FIN IPHONE -->
-
-
-                                  <div id="formulaire" class="col-md-6"> <!--  DÉBUT FORMULAIRE -->
-                                    <div class="card-body">
-                                      <form action="https://" method="POST">
-                                        <div id="email" class="p pb-3"><strong>OU ENVOYEZ-MOI UN MAIL</strong></div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="input-group"><span class="input-group-addon"></span>
-                                              <input class="form-control" type="text" name="Nom" placeholder="Nom" required="required"/>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="input-group"><span class="input-group-addon"></span>
-                                              <input class="form-control" type="text" name="Sujet" placeholder="Objet" required="required"/>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="input-group"><span class="input-group-addon"></span>
-                                              <input class="form-control" type="email" name="email" placeholder="Entrez votre eMail" required="required"/>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <div class="col">
-                                            <div class="form-group"><span class="input-group-addon"></span>
-                                              <textarea class="form-control" name="message" placeholder="Tapez votre message" required="required"></textarea>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col">
-                                            <button class="btn btn-send" type="submit">Envoyer</button>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div> <!--  FIN FORMULAIRE -->
-
-
-                                </div> <!--  FIN ROW IPHONE + FORMULAIRE -->
-                            </div> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
+            <div id="sectiontitle"  class="h2 text-center title title-contact" ><strong>CONTACT</strong></div><br> <!--  TITRE CONTACT -->
+            <div class="cc-contact-information">
+              <div class="container-fluid">
+                <div class="cc-contact">
+                  <div class="col-md-12"> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
+                    <div class="row"> <!--  DÉBUT ROW IPHONE + FORMULAIRE -->
+                      <div id="iphone" class="col-md-6"> <!--  DÉBUT IPHONE -->
+                        <div id="scan" class="p pb-3"><strong>SCANNEZ LE QR CODE</strong></div>
+                        <div class="iphone">
+                          <div class="border">
+                            <div class="responsive-html5-chat">
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div> <!--FIN DE LA SECTION "CONTACT"-->
-
+                      </div> <!--  FIN IPHONE -->
+                      <div id="formulaire" class="col-md-6"> <!--  DÉBUT FORMULAIRE -->
+                        <div class="card-body">
+                          <form action="https://" method="POST">
+                            <div id="email" class="p pb-3"><strong>OU ENVOYEZ-MOI UN MAIL</strong></div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group"><span class="input-group-addon"></span>
+                                  <input class="form-control" type="text" name="Nom" placeholder="Nom" required="required"/>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group"><span class="input-group-addon"></span>
+                                  <input class="form-control" type="text" name="Sujet" placeholder="Objet" required="required"/>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group"><span class="input-group-addon"></span>
+                                  <input class="form-control" type="email" name="email" placeholder="Entrez votre eMail" required="required"/>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="form-group"><span class="input-group-addon"></span>
+                                  <textarea class="form-control" name="message" placeholder="Tapez votre message" required="required"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <button class="btn btn-send" type="submit">Envoyer</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div> <!--  FIN FORMULAIRE -->
+                    </div> <!--  FIN ROW IPHONE + FORMULAIRE -->
+                  </div> <!--  DÉBUT BOOTSTRAP IPHONE + FORMULAIRE -->
+                </div>
+              </div>
+            </div>
+          </div> <!--FIN DE LA SECTION "CONTACT"-->
           <div class="section-game" id="game"> <!--DÉBUT DE LA SECTION "GAME"-->
             <div class="container">
               <div id="sectiontitle" class="h2 text-center mb-4 title" ><strong>SOME FUN BEFORE LEAVING</strong>
@@ -551,7 +537,6 @@
               </a>
             </footer>
           </div> <!--FIN DU "FOOTER"-->
-
           <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--APPEL DES "SCRIPTS"-->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
