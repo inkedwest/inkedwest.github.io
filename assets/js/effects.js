@@ -11,18 +11,10 @@ $(document).ready(function(){
     traX = ((4 * mouseX) / 570) + 40;
     traY = ((4 * mouseY) / 570) + 50;
     console.log(traX);
-    $(".titleName").css({"background-position": traX + "%" + traY + "%"});
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
   });
-  $(".navbar a, footer a").on("click", function(event){
-
-       event.preventDefault();
-       var hash = this.hash;
-
-       $('body,html').animate({scrollTop: $(hash).offset().top} , 1300 , function(){window.location.hash = hash;})
-
-   });
-
 });
+
 
 //------------------------------------------------------------------------------
 
