@@ -1,13 +1,15 @@
+/* PARAMÈTRES DES PROGRESS BARS DE LA SECTION "SKILLS"	*/
+
 .skillbar {
 	position:relative;
 	display:block;
 	margin-bottom:15px;
 	width:100%;
-	background:#eee;
+	background:#eee; /*Permet de changer la couleur de la partie restante (non chargée par le pourcentage de maîtrise des compétences) - exemple : HTML 90% > le reste est de 10%) */
 	height:35px;
 	border-radius:3px;
 	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
+	-webkit-border-radius:30px;
 	-webkit-transition:0.4s linear;
 	-moz-transition:0.4s linear;
 	-ms-transition:0.4s linear;
@@ -24,7 +26,7 @@
 	position:absolute;
 	top:0;
 	left:0;
-width:110px;
+	width:110px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
@@ -41,8 +43,8 @@ width:110px;
 	display:block;
 	background:rgba(0, 0, 0, 0.1);
 	padding:0 20px;
-	height:35px;
-	line-height:35px;
+	height:35px; /* Hauteur de la case dans laquelle sont inscrites les compétences */
+	line-height:35px; /* Alignement vertical du titre de la compétences dans la case */
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:3px;
 	-moz-border-radius-topleft:3px;
@@ -52,21 +54,18 @@ width:110px;
 }
 
 .skillbar-bar {
-	height:35px;
-	width:0px;
+	height:35px; /* Hauteur de la barre de progression ; ici de 35px pour être aussi haute que la case du titre de compétence */
 	background:#6adcfa;
 	border-radius:3px;
 	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
+	-webkit-border-radius:3px; /* bout de la barre de progression chargée, plus on augmente le px plus l'aspect est arrondi */
 }
 
 .skill-bar-percent {
 	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
+	right:10px; /* Permet de décalage le pourcentage de maîtrise de compétences dans la barre de progression */
+	top:0; /* Permet de positionner verticalement le pourcentage dans la barre de progression */
+	font-size:11px; /* Taille de police du pourcentage */
 	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
+	color:rgba(0, 0, 0, 0.6); /* Couleur de police du pourcentage */
 }

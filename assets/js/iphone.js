@@ -1,4 +1,4 @@
-
+/* PARAMÈTRES JS POUR L'IPHONE DANS LA SECTION "CONTACT" */
 
 function responsiveChat(element) {
     $(element).html('<form class="chat"><span></span><div class="messages"></div><input type="text" placeholder="Your message"><input type="submit" value="Send"></form>');
@@ -66,7 +66,7 @@ function responsiveChatPush(element, sender, origin, date, message) {
 responsiveChat('.responsive-html5-chat');
 
 /* Let's push some dummy data */
-responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:30', 'Salut Francky! J\'ai une superbe offre à te proposer. Aurais-tu une adresse mail stp? J\'aimerais t\'envoyer la fiche de poste. Si l\'opportunité t\'intéresse, nous pourrions nous appeler cette semaine afin d\'en discuter de vive voix. Qu\'en dis-tu?');
-responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 14:36', 'Bonjour!<br> Pour avoir mes coordonnées complètes et me joindre, <br><strong>SCANNE LE QR CODE CI-DESSOUS AVEC TON SMARTPHONE : <img src="assets/images/qrcode.png" width="150" height="150" /></strong>');
-responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:52', 'QR Code scanné, c\'est dans la boîte, merci ! :)');
-responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 15:07', 'Je t\'en prie!');
+responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:30', 'Bonjour Francky! J\'ai un super job à vous proposer. Auriez-vous une adresse mail svp? J\'aimerais vous envoyer la fiche de poste. Si l\'opportunité vous intéresse, nous pourrions nous appeler cette semaine afin d\'en discuter de vive voix. Qu\'en dites-vous?');
+responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 14:36', 'Bonjour et merci pour cette proposition!<br> Pour avoir mes coordonnées complètes, <br><strong>SCANNEZ LE QR CODE CI-DESSOUS AVEC VOTRE SMARTPHONE : <img src="assets/images/qrcode.png" width="150" height="150" /></strong><br> Vous aurez toutes les informations utiles pour me contacter.');
+responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:52', 'Effectivement très complet! QR Code scanné, c\'est dans la boîte, merci ! Je vous appelle dans quelques jours comme promis :)');
+responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 15:07', 'Avec plaisir! À bientôt.');

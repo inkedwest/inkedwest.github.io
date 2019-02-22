@@ -1,4 +1,4 @@
-// FRANCKY G.
+// PARAMÈTRES DE L'ANIMATION HOVER SUR "FRANCKY G".
 
 $(document).ready(function(){
   var mouseX, mouseY;
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 //------------------------------------------------------------------------------
 
-// CITATION
+// PARAMÈTRES DE L'ANIMATION DE LA CITATION
 
 $(document).ready(function(){
 	setup();
@@ -71,6 +71,9 @@ function setup(){
 	$passage.html(newtext);
 
 }
+
+
+// PARAMÈTRES POUR LE SPIN DU CAROUSEL 3D
 
 var angle = 0;
 function galleryspin(sign) {
