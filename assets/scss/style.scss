@@ -1,0 +1,32 @@
+.titleName{
+  font-weight: 800;
+  color: transparent;
+  font-size: 80px;
+  margin-top: 20px;
+  background: url('../images/rainbow-nebula.jpg') repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:100%;
+  letter-spacing: -8px;
+  margin-left: 50px;
+}
+
+.fullstack{
+  display: block;
+  text-transform: uppercase;
+  padding-top:10px;
+  color: white;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.subtitle{
+  display: block;
+  text-transform: uppercase;
+  padding-top:10px;
+  color: white;
+  font-size: 15px;
+  margin-left: 50px;
+}

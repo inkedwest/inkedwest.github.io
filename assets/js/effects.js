@@ -1,4 +1,4 @@
-// PARAMÈTRES DE L'ANIMATION HOVER SUR "FRANCKY G".
+// FRANCKY G.
 
 $(document).ready(function(){
   var mouseX, mouseY;
@@ -11,14 +11,22 @@ $(document).ready(function(){
     traX = ((4 * mouseX) / 570) + 40;
     traY = ((4 * mouseY) / 570) + 50;
     console.log(traX);
-    $(".title").css({"background-position": traX + "%" + traY + "%"});
+    $(".titleName").css({"background-position": traX + "%" + traY + "%"});
   });
-});
+  $(".navbar a, footer a").on("click", function(event){
 
+       event.preventDefault();
+       var hash = this.hash;
+
+       $('body,html').animate({scrollTop: $(hash).offset().top} , 1300 , function(){window.location.hash = hash;})
+
+   });
+
+});
 
 //------------------------------------------------------------------------------
 
-// PARAMÈTRES DE L'ANIMATION DE LA CITATION
+// CITATION
 
 $(document).ready(function(){
 	setup();
@@ -63,9 +71,6 @@ function setup(){
 	$passage.html(newtext);
 
 }
-
-
-// PARAMÈTRES POUR LE SPIN DU CAROUSEL 3D
 
 var angle = 0;
 function galleryspin(sign) {
