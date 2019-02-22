@@ -20,9 +20,9 @@ $(document).ready(function(){
 
        $('body,html').animate({scrollTop: $(hash).offset().top} , 1300 , function(){window.location.hash = hash;})
 
-   });
+   };
 
-});
+}
 
 //------------------------------------------------------------------------------
 
