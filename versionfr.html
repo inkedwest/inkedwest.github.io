@@ -5,7 +5,7 @@
   <title>CV Numérique de Francky Glatigny</title>
   <meta charset="utf-8">
   <meta name="description" content="My Curriculum Vitae" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" media="screen and (max-width: 1280px)" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> Pour le responsive mais bug d'affichage -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
@@ -28,7 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
           <li class="nav-item"><a class="nav-link" href="#diploma">Diplômes</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#recommandations">Recommandations</a></li>
+          <li class="nav-item d-sm-block"><a class="nav-link" href="#recommandations">Recommandations</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="#game"><img id="pirates" src="assets/images/pirates.png" /></a></li>
         </ul>
@@ -39,7 +39,6 @@
     <div class="wrapper">
       <div class="container">
         <div class="text-center">
-          <div class="col-lg-6 col-md-12">
           <img class="fluid photoMoiProfil" src="assets/images/avatarfrench.gif" alt="photoMoi" />
           <div id="franckyg">
             <div class="titleName">FRANCKY G.</div>
@@ -56,7 +55,6 @@
         </div>
       </div>
     </div>
-  </div>
   </div> <!--FIN DE LA SECTION "BANNIÈRE"-->
   <div class="section" id="me"> <!--DÉBUT DE LA SECTION "ABOUT ME"-->
     <div class="container-fluid">
@@ -426,9 +424,9 @@
           </div> <!--FIN SECTION "EXPERIENCES"-->
           <div id="recommandations" class="section"> <!--DÉBUT DE LA SECTION "RECOMMANDATIONS"-->
             <div  class="container-fluid">
+              <div class="col-xs-col-lg-12 col-md-12 d-none d-sm-block">
               <div id="sectiontitle" class="h2 text-center mb-4 title" ><strong>RECOMMANDATIONS</strong><br><br>
               </div>
-              <div class="col-xs-col-lg-12 col-md-12 d-none d-sm-block">
                 <div class="card">
                   <div class="card-body">
                     <div id="carousel">
