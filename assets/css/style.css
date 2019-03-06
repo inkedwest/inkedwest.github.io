@@ -736,8 +736,8 @@ author{
 }
 
 
-.recommandations{
-  display: d-sm-none;
+.d-none{
+  display: none !important;
 }
 
 
