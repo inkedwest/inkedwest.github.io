@@ -736,7 +736,9 @@ author{
 }
 
 
-
+.recommandations{
+  display: d-sm-none;
+}
 
 
 
