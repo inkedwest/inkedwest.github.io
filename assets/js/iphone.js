@@ -66,7 +66,7 @@ function responsiveChatPush(element, sender, origin, date, message) {
 responsiveChat('.responsive-html5-chat');
 
 /* Let's push some dummy data */
-responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:30', 'Bonjour Francky! J\'ai un super job à vous proposer. Auriez-vous une adresse mail svp? J\'aimerais vous envoyer la fiche de poste. Si l\'opportunité vous intéresse, nous pourrions nous appeler cette semaine afin d\'en discuter de vive voix. Qu\'en dites-vous?');
-responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 14:36', 'Bonjour et merci pour cette proposition!<br> Pour avoir mes coordonnées complètes, <br><strong>SCANNEZ LE QR CODE CI-DESSOUS AVEC VOTRE SMARTPHONE : <img src="assets/images/qrcode.png" width="150" height="150" /></strong><br> Vous aurez toutes les informations utiles pour me contacter.');
-responsiveChatPush('.chat', 'Recruteur', 'you', '19.02.2019 14:52', 'Effectivement très complet! QR Code scanné, c\'est dans la boîte, merci ! Je vous appelle dans quelques jours comme promis :)');
-responsiveChatPush('.chat', 'Francky', 'me', '19.02.2019 15:07', 'Avec plaisir! À bientôt.');
+responsiveChatPush('.chat', 'Recruteur', 'you', '01.04.2019 08:30', 'Bonjour Francky! J\'ai un super job à vous proposer. Auriez-vous une adresse mail svp? J\'aimerais vous envoyer la fiche de poste. Si l\'opportunité vous intéresse, nous pourrions nous appeler cette semaine afin d\'en discuter de vive voix. Qu\'en dites-vous?');
+responsiveChatPush('.chat', 'Francky', 'me', '01.04.2019 08:36', 'Bonjour et merci pour cette proposition!<br> Pour avoir mes coordonnées complètes, <br><strong>SCANNEZ LE QR CODE CI-DESSOUS AVEC VOTRE SMARTPHONE : <img src="assets/images/qrcode.png" width="150" height="150" /></strong><br> Vous aurez toutes les informations utiles pour me contacter.');
+responsiveChatPush('.chat', 'Recruteur', 'you', '01.04.2019 08:52', 'Effectivement très complet! QR Code scanné, c\'est dans la boîte, merci ! Je vous appelle dans quelques jours comme promis :)');
+responsiveChatPush('.chat', 'Francky', 'me', '01.04.2019 09:07', 'Avec plaisir! À bientôt.');
