@@ -453,7 +453,7 @@ transform: scale(1.3);
 
 div#carousel {
   perspective: 1200px;
-  background: #FFF;
+  background: lightgrey;
   padding-top: 5%;
   font-size:0;
   margin-bottom: 3rem;
