@@ -549,9 +549,6 @@ margin-top: 150px;
 }
 
 
-#iphone{
-  margin-top: 50px;
-}
 
 
 .btn-send{
@@ -749,8 +746,29 @@ author{
     background-size:100% 100%;
     margin:0 auto;
     position:relative;
+    margin-left: 270px;
   }
 
+  #iphone{
+    margin-top: 50px;
+  }
+
+
+  /* IPAD */
+  .ipad{
+    width:900px;
+    height:550px;
+    background-image:url('../images/ipad.jpg');
+    background-size:100% 100%;
+    margin:0 auto;
+    position:relative;
+
+  }
+
+  .ipad{
+    margin-top: 120px;
+    margin-left: -100px;
+  }
 
 
   .border{
