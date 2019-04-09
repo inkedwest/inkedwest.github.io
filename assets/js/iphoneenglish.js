@@ -69,4 +69,4 @@ responsiveChat('.responsive-html5-chat');
 responsiveChatPush('.chat', 'Recruteur', 'you', '03.04.2019 2:30pm', 'Hi Francky! There\'s a great job opportunity I\'d like to talk to you. What\'s your email please? I\'d like to send you the job description. If you\'re interested by this job opening maybe we can discuss it live by the end of the week. What do you think?');
 responsiveChatPush('.chat', 'Francky', 'me', '03.04.2019 2:36pm', 'Hi! Thanks for this great offer!<br> You\'ll know more about me by scanning the code below with your smartphone : <img src="assets/images/qrcode.png" width="150" height="150" /><br> You\'ll get all necessary info so we can get in touch.');
 responsiveChatPush('.chat', 'Recruteur', 'you', '03.04.2019 2:52pm', 'Indeed, that\'s very thorough! As disccused I\'ll call you in few days.');
-responsiveChatPush('.chat', 'Francky', 'me', '03.04.2019 3:07pm', 'My pleasure, Talk to you soon. Regards, Francky');
+responsiveChatPush('.chat', 'Francky', 'me', '03.04.2019 3:07', 'My pleasure, Talk to you soon. Regards, Francky');
